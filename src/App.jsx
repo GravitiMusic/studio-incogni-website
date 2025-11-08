@@ -203,7 +203,7 @@ function MainWebsite() {
       </nav>
 
       <header className="site-header">
-        <h1 className="studio-name">Incogni Studios</h1>
+        <h1 className="studio-name">Studio Incogni</h1>
         <p className="studio-tagline">Unseen worlds, unforgettable games</p>
       </header>
 
@@ -263,14 +263,14 @@ function MainWebsite() {
         {/* About Page - Placeholder */}
         {activeTab === 'about' && (
           <section className="about-section">
-            <h2>About Incogni Studios</h2>
+            <h2>About Studio Incogni</h2>
             <p>More information coming soon...</p>
           </section>
         )}
       </main>
 
       <footer className="site-footer">
-        <p>&copy; 2025 Incogni Studios. Some secrets reserved.</p>
+        <p>&copy; 2025 Studio Incogni. Some secrets reserved.</p>
       </footer>
     </div>
   )
@@ -293,7 +293,7 @@ function App() {
       {showEnvelope ? (
         <>
           <div className="intro-overlay">
-            <h1 className="studio-title">Incogni Studios</h1>
+            <h1 className="studio-title">Studio Incogni</h1>
             <p className="studio-tagline-intro">Unseen worlds, unforgettable games</p>
             <p className="instruction-text">The eye watches. Click to enter.</p>
           </div>
