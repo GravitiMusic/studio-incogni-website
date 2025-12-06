@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import * as THREE from 'three'
 import './App.css'
+import { TeamMemberCard, teamMembers } from './components/TeamMemberCard'
 
 // Wax Seal Component with click detection and eye motif
 function WaxSeal({ onSealClick }) {
@@ -203,7 +203,7 @@ function MainWebsite() {
       </nav>
 
       <header className="site-header">
-        <h1 className="studio-name">Studio Incogni</h1>
+        <h1 className="studio-name">Incogni Studios</h1>
         <p className="studio-tagline">Unseen worlds, unforgettable games</p>
       </header>
 
@@ -260,11 +260,23 @@ function MainWebsite() {
           </section>
         )}
 
-        {/* About Page - Placeholder */}
+        {/* About Page with Team Members */}
         {activeTab === 'about' && (
           <section className="about-section">
-            <h2>About Studio Incogni</h2>
-            <p>More information coming soon...</p>
+            <h2>Meet the Team</h2>
+            <p className="about-intro">The minds behind Incogni Studios</p>
+            <div className="team-grid">
+              {teamMembers.map((member, index) => (
+                <TeamMemberCard
+                  key={index}
+                  name={member.name}
+                  role={member.role}
+                  description={member.description}
+                  image={member.image}
+                  site={member.site}
+                />
+              ))}
+            </div>
           </section>
         )}
       </main>
@@ -293,7 +305,7 @@ function App() {
       {showEnvelope ? (
         <>
           <div className="intro-overlay">
-            <h1 className="studio-title">Studio Incogni</h1>
+            <h1 className="studio-title">Incogni Studios</h1>
             <p className="studio-tagline-intro">Unseen worlds, unforgettable games</p>
             <p className="instruction-text">The eye watches. Click to enter.</p>
           </div>

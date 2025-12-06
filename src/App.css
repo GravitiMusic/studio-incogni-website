@@ -423,13 +423,13 @@
 .about-section {
   text-align: center;
   padding: 4rem 2rem;
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .about-section h2 {
   font-size: 3rem;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   background: linear-gradient(135deg, #d4af37, #ffffff, #d4af37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -438,10 +438,148 @@
   font-family: 'Georgia', serif;
 }
 
-.about-section p {
+.about-intro {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.8;
+  color: rgba(212, 175, 55, 0.8);
+  font-style: italic;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Team Grid - Sticky Note Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* Sticky Note Card Styles */
+.sticky-note {
+  background: linear-gradient(135deg, #feff9c 0%, #ffffa8 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 3px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
+              0 2px 5px rgba(0, 0, 0, 0.2),
+              inset 0 -2px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+/* Add subtle rotation to each sticky note for a more natural look */
+.sticky-note:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.sticky-note:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.sticky-note:nth-child(3n) {
+  transform: rotate(-0.5deg);
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+              0 5px 15px rgba(0, 0, 0, 0.3),
+              inset 0 -2px 3px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+/* Sticky note "tape" effect at top */
+.sticky-note::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container at top of sticky note */
+.sticky-note-image-container {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-note-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Name styling */
+.sticky-note-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.05rem;
+}
+
+/* Role styling */
+.sticky-note-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 0.25rem 0 1rem 0;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.85rem;
+}
+
+/* Description styling */
+.sticky-note-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Link styling */
+.sticky-note-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  color: #2c2c2c;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.sticky-note-link:hover {
+  background: rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .site-footer {
