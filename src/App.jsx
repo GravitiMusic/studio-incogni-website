@@ -224,6 +224,22 @@ function MainWebsite() {
               </p>
             </section>
 
+            {/* Game Trailer Section */}
+            <section className="trailer-section">
+              <h2 className="trailer-title">Our Latest Game</h2>
+              <div className="video-container">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/5iGNjMYI6us"
+                  title="Incogni Studios Game Trailer"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </section>
+
             <section className="features">
               <div className="feature-card">
                 <h3>👁️ Mystery & Discovery</h3>

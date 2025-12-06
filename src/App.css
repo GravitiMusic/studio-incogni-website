@@ -321,6 +321,49 @@
   line-height: 1.6;
 }
 
+/* Trailer Section Styles */
+.trailer-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+.trailer-title {
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  background: linear-gradient(135deg, #d4af37, #ffffff, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  font-family: 'Georgia', serif;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(212, 175, 55, 0.4);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 /* Download Page Styles */
 .download-section {
   text-align: center;
