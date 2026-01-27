@@ -267,7 +267,7 @@ function MainWebsite() {
                 className="download-btn windows-btn"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/downloads/MouseBuild1.zip';
+                  link.href = `${import.meta.env.BASE_URL}downloads/MouseBuild1.zip`;
                   link.download = 'MouseBuild1.zip';
                   document.body.appendChild(link);
                   link.click();
@@ -281,7 +281,7 @@ function MainWebsite() {
                 className="download-btn mac-btn"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/downloads/MouseBuild1.zip';
+                  link.href = `${import.meta.env.BASE_URL}downloads/MouseBuild1.zip`;
                   link.download = 'MouseBuild1.zip';
                   document.body.appendChild(link);
                   link.click();
