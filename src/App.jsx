@@ -263,16 +263,36 @@ function MainWebsite() {
             <h2>Download the Game Here</h2>
             <p className="download-subtitle">Choose your platform</p>
             <div className="download-buttons">
-              <button className="download-btn windows-btn">
+              <button 
+                className="download-btn windows-btn"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/downloads/MouseBuild1.zip';
+                  link.download = 'MouseBuild1.zip';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <span className="download-icon">🪟</span>
                 <span className="download-text">Windows</span>
               </button>
-              <button className="download-btn mac-btn">
+              <button 
+                className="download-btn mac-btn"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/downloads/MouseBuild1.zip';
+                  link.download = 'MouseBuild1.zip';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <span className="download-icon">🍎</span>
                 <span className="download-text">Mac</span>
               </button>
             </div>
-            <p className="download-note">Downloads coming soon...</p>
+            <p className="download-note">Click to download the game build</p>
           </section>
         )}
 
