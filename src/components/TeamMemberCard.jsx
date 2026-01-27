@@ -1,14 +1,15 @@
 // Import team member images
 import charlieImg from '../../note-assets/charlie/Untitled.png'
-import ajaImg from '../../note-assets/aja/AjaIcon.png'
+import nickImg from '../../note-assets/nick/NickIcon.jpg'
 import zachImg from '../../note-assets/zach/IMG_4141.png'
 import jessicaImg from '../../note-assets/jessica/Untitled3_20251119135415.png'
 import jaiImg from '../../note-assets/jai/Screenshot_20251119_112741_Joplin.jpg'
 import aresImg from '../../note-assets/ares/Portral.png'
 import adrianaImg from '../../note-assets/adriana/pandaBack.png'
 import nikitaImg from '../../note-assets/nikita/IMG_9396.png'
+import cairoImg from '../../note-assets/cairo/octopus_pfp_1.jpg'
 
-// Team Member Card Component - Sticky Note Style
+// Team Member Card Component - Sticky Note Style 
 export function TeamMemberCard({ name, role, description, image, site }) {
   return (
     <div className="sticky-note">
@@ -37,11 +38,11 @@ export const teamMembers = [
     site: "https://www.linkedin.com/in/charlie-meyer-a06a0117a/"
   },
   {
-    name: "Aja España",
-    role: "Technical Director",
-    description: "I'm a game developer and tools programmer who can't stop working in Unity for some reason :p",
-    image: ajaImg,
-    site: "https://www.linkedin.com/in/aja-espana/"
+    name: "Nick Anania",
+    role: "Producer",
+    description: "Im the producer, ensuring the vision comes to light.",
+    image: nickImg,
+    site: "https://www.artstation.com/nick_anania"
   },
   {
     name: "Zach Spindel",
@@ -84,5 +85,12 @@ export const teamMembers = [
     description: "An artist that has a penchant for detail",
     image: nikitaImg,
     site: "https://www.artstation.com/nik1w1"
+  },
+  {
+    name: "Cairo Figueroa",
+    role: "Creative Director",
+    description: "A narrative and sound designer weaving fully realized worlds",
+    image: cairoImg,
+    site: "https://cairofigueroaportfolio.com/"
   }
 ]
