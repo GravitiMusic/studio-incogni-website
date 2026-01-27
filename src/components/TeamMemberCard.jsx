@@ -9,7 +9,7 @@ import adrianaImg from '../../note-assets/adriana/pandaBack.png'
 import nikitaImg from '../../note-assets/nikita/IMG_9396.png'
 import cairoImg from '../../note-assets/cairo/octopus_pfp_1.jpg'
 
-// Team Member Card Component - Sticky Note Style 
+// Team Member Card Component - Sticky Note Style
 export function TeamMemberCard({ name, role, description, image, site }) {
   return (
     <div className="sticky-note">
@@ -70,11 +70,11 @@ export const teamMembers = [
     role: "3D Artist",
     description: "I'm a 3D artist, focusing on the props.",
     image: aresImg,
-    site: "https://www.linkedin.com/in/yat-long-ares-wong-9841b6262/"
+    site: "https://www.artstation.com/yatlongwong"
   },
   {
     name: "Adriana Vasquez",
-    role: "Programmer",
+    role: "Technical Director",
     description: "I'm a programmer with a focus on game UI",
     image: adrianaImg,
     site: "https://www.linkedin.com/in/adriana--vasquez"
