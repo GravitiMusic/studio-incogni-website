@@ -1,5 +1,70 @@
+/* Betty Noir Font - Headers */
+@font-face {
+  font-family: 'Betty Noir';
+  src: url('./assets/fonts/bettynoir/bettynoir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Carrol Family Font - Body */
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Semi Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Extra Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('./assets/fonts/carrol_family/Carrol Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Carrol', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,6 +98,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'Betty Noir', serif;
 }
 
 button {

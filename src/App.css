@@ -30,7 +30,7 @@
   background-clip: text;
   filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
   letter-spacing: 0.4rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
   animation: fadeIn 2s ease-in-out;
   text-transform: uppercase;
 }
@@ -133,7 +133,7 @@
   transition: all 0.3s ease;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
 }
 
 .navbar-tabs button:hover {
@@ -179,7 +179,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.4rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
   text-transform: uppercase;
   filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
 }
@@ -274,7 +274,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
 }
 
 .hero-section p {
@@ -313,6 +313,7 @@
   font-size: 1.8rem;
   margin: 0 0 1rem 0;
   color: #d4af37;
+  font-family: 'Betty Noir', serif;
 }
 
 .feature-card p {
@@ -341,7 +342,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
 }
 
 .video-container {
@@ -380,7 +381,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
 }
 
 .download-subtitle {
@@ -411,7 +412,7 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -478,7 +479,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Betty Noir', serif;
 }
 
 .about-intro {
@@ -514,7 +515,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  font-family: 'Carrol', 'Comic Sans MS', 'Arial', sans-serif;
 }
 
 /* Add subtle rotation to each sticky note for a more natural look */
