@@ -188,16 +188,16 @@ function MainWebsite() {
             Home
           </button>
           <button 
-            className={activeTab === 'download' ? 'active' : ''}
-            onClick={() => setActiveTab('download')}
+            className={activeTab === 'game' ? 'active' : ''}
+            onClick={() => setActiveTab('game')}
           >
-            Download
+            Game
           </button>
           <button 
-            className={activeTab === 'about' ? 'active' : ''}
-            onClick={() => setActiveTab('about')}
+            className={activeTab === 'team' ? 'active' : ''}
+            onClick={() => setActiveTab('team')}
           >
-            About
+            Team
           </button>
         </div>
       </nav>
@@ -211,6 +211,29 @@ function MainWebsite() {
         {/* Home Page */}
         {activeTab === 'home' && (
           <>
+            {/* Game Trailer Section */}
+            <section className="trailer-section">
+              <h2 className="trailer-title">Our Latest Game</h2>
+              <div className="video-container">
+                <div
+                  className="video-click-overlay"
+                  role="button"
+                  tabIndex={0}
+                  aria-label="View game page"
+                  onClick={() => setActiveTab('game')}
+                />
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qgch6WOIHQA"
+                  title="Incogni Studios Game Trailer"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </section>
+
             <section className="hero-section">
               <h2>What Lies Beneath</h2>
               <p>
@@ -222,22 +245,6 @@ function MainWebsite() {
                 of hidden depth—truths concealed in shadows, systems lurking beneath 
                 the obvious, spaces that reveal themselves only to the observant.
               </p>
-            </section>
-
-            {/* Game Trailer Section */}
-            <section className="trailer-section">
-              <h2 className="trailer-title">Our Latest Game</h2>
-              <div className="video-container">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/5iGNjMYI6us"
-                  title="Incogni Studios Game Trailer"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
             </section>
 
             <section className="features">
@@ -257,47 +264,82 @@ function MainWebsite() {
           </>
         )}
 
-        {/* Download Page */}
-        {activeTab === 'download' && (
-          <section className="download-section">
-            <h2>Download the Game Here</h2>
-            <p className="download-subtitle">Choose your platform</p>
-            <div className="download-buttons">
-              <button 
-                className="download-btn windows-btn"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = `${import.meta.env.BASE_URL}downloads/Build_Week10.zip`;
-                  link.download = 'Build_Week10.zip';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
-              >
-                <span className="download-icon">🪟</span>
-                <span className="download-text">Windows</span>
-              </button>
-              <button 
-                className="download-btn mac-btn"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = `${import.meta.env.BASE_URL}downloads/Build_Week10.zip`;
-                  link.download = 'Build_Week10.zip';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
-              >
-                <span className="download-icon">🍎</span>
-                <span className="download-text">Mac</span>
-              </button>
-            </div>
-            <p className="download-note">Click to download the game build</p>
-          </section>
+        {/* Game Page */}
+        {activeTab === 'game' && (
+          <>
+            {/* Trailer + Navigation */}
+            <section className="trailer-section">
+              <h2 className="trailer-title">Our Latest Game</h2>
+              <div className="video-container">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qgch6WOIHQA"
+                  title="Incogni Studios Game Trailer"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </section>
+
+            {/* Narrative */}
+            <section className="narrative">
+              <h2 className="narrative-title">The Story</h2>
+              <div className="narrative-body">
+                <p>
+                  <strong>Nothing Left Unseen</strong> is a narrative-driven, puzzle, mystery game. Players assume the role of a Philadelphian detective, Hugh Latimer, one of the three blind mice, as he uncovers the mystery behind the disappearance of his two partners through the grime and squalor of 1976 Philly.
+                </p>
+                <p>
+                  Hugh is blind but has a keen sense of smell to sniff around town to figure out just what transpired that night. He is a thorough detective: interrogating people of interest, finding clues, and not taking kindly to red herrings wasting his time.
+                </p>
+                <p>
+                  Sort out the evidence, investigate suspects, and crack the case!
+                </p>
+              </div>
+            </section>
+
+            {/* Download */}
+            <section className="download-section">
+              <h2>Download the Game Here</h2>
+              <p className="download-subtitle">Choose your platform</p>
+              <div className="download-buttons">
+                <button 
+                  className="download-btn windows-btn"
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = `${import.meta.env.BASE_URL}downloads/Build_Week10.zip`;
+                    link.download = 'Build_Week10.zip';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
+                  <span className="download-icon">🪟</span>
+                  <span className="download-text">Windows</span>
+                </button>
+                <button 
+                  className="download-btn mac-btn"
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = `${import.meta.env.BASE_URL}downloads/Build_Week10.zip`;
+                    link.download = 'Build_Week10.zip';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
+                  <span className="download-icon">🍎</span>
+                  <span className="download-text">Mac</span>
+                </button>
+              </div>
+              <p className="download-note">Click to download the game build</p>
+            </section>
+          </>
         )}
 
-        {/* About Page with Team Members */}
-        {activeTab === 'about' && (
+        {/* Team*/}
+        {activeTab === 'team' && (
           <section className="about-section">
             <h2>Meet the Team</h2>
             <p className="about-intro">The minds behind Incogni Studios</p>
